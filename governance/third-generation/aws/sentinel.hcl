@@ -68,3 +68,8 @@ policy "restrict-launch-configuration-instance-type" {
   source = "./restrict-launch-configuration-instance-type.sentinel"
   enforcement_level = "hard-mandatory"
 }
+
+policy "restrict-iam-policy" {
+  source = "./restrict-iam-policy-actions.sentinel"
+  enforcement_level = "hard-mandatory"
+}
