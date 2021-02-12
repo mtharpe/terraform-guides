@@ -16,55 +16,55 @@ module "aws-functions" {
 
 policy "enforce-mandatory-tags" {
   source = "./enforce-mandatory-tags.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "require-private-acl-and-kms-for-s3-buckets" {
   source = "./require-private-acl-and-kms-for-s3-buckets.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-ami-owners" {
   source = "./restrict-ami-owners.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-assumed-roles-by-workspace" {
   source = "./restrict-assumed-roles-by-workspace.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-assumed-roles" {
   source = "./restrict-assumed-roles.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-availability-zones" {
   source = "./restrict-availability-zones.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-current-ec2-instance-type" {
   source = "./restrict-current-ec2-instance-type.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-db-instance-engines" {
   source = "./restrict-db-instance-engines.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-ec2-instance-type" {
   source = "./restrict-ec2-instance-type.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-ingress-sg-rule-cidr-blocks" {
   source = "./restrict-ingress-sg-rule-cidr-blocks.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-launch-configuration-instance-type" {
   source = "./restrict-launch-configuration-instance-type.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
