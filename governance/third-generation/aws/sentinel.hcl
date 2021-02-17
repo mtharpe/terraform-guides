@@ -39,10 +39,10 @@ policy "restrict-assumed-roles" {
   enforcement_level = "hard-mandatory"
 }
 
-policy "restrict-availability-zones" {
-  source = "./restrict-availability-zones.sentinel"
-  enforcement_level = "hard-mandatory"
-}
+// policy "restrict-availability-zones" {
+//   source = "./restrict-availability-zones.sentinel"
+//   enforcement_level = "hard-mandatory"
+// }
 
 policy "restrict-current-ec2-instance-type" {
   source = "./restrict-current-ec2-instance-type.sentinel"
